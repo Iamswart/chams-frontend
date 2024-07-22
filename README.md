@@ -1,30 +1,57 @@
-# React + TypeScript + Vite
+# Airtime and Data API Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+The Airtime and Data API provides a comprehensive solution for managing the purchase and distribution of airtime and data plans. This repository contains the frontend code of the application, built with ReactJS, Typescript and Chakra UI for a responsive and accessible user interface.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Cart management
+- Airtime and Data Purchase
+- Responsive design for both desktop and mobile devices
 
-## Expanding the ESLint configuration
+## Technologies Used
+- ReactJS
+- TypeScript
+- Chakra UI
+- Axios 
+- React Query
+- Vite as a build tool
+- Other libraries and tools as listed in `package.json`
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Getting Started
 
-- Configure the top-level `parserOptions` property like this:
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+### Prerequisites
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Node.js (version 14 or newer)
+- npm
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Iamswart/chams-frontend.git
+   cd chams-frontend
+
+
+2. **Install dependencies:**
+    ```bash
+    npm install
+
+3. **Set up environment variables**
+
+    Create a .env file in the root directory of the project and add the following variables:
+
+    ```bash
+    VITE_API_BASE_URL='The base URL of your backend API'
+    VITE_API_KEY='API key for accessing your backend services'
+
+    Replace the placeholders with your backend base url and x-api-key.
+
+4. **Running the Application**
+    ```bash
+    npm run dev
+
+    The API will be available at http://localhost:5173 .
+

@@ -122,7 +122,7 @@ export default function Navbar() {
                 </Button>
               </RouterLink>
 
-              <RouterLink to={"/cart"}>
+              <RouterLink to={"/checkout"}>
                 <Button
                   variant={"solid"}
                   bgColor={"#5F2EEA"}

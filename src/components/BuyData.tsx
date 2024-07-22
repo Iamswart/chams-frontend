@@ -137,7 +137,7 @@ const BuyData: React.FC<BuyDataProps> = ({ onAddToCart, onCheckout }) => {
   }
 
   return (
-    <VStack align="stretch" w={"430px"}>
+    <VStack align="stretch" w={"100%"}>
       <Text fontSize="18px" fontWeight="bold" lineHeight={"28px"}>
         Buy data
       </Text>

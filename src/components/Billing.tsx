@@ -25,9 +25,11 @@ const BillingComponent: React.FC = () => {
   };
 
   const handleAddToCart = () => {
+    // Handle add to cart logic
   };
 
   const handleCheckout = () => {
+    // Handle checkout logic
   };
 
   return (

@@ -20,7 +20,7 @@ const Layout = () => {
       <Flex flexDirection="column" minHeight="100vh" w={"100%"} bgColor={"#FCFCFD"}>
       <Header />
       {!shouldHideNavbar && <Navbar />}
-        <Box flex="1" m={"0px"} bgColor={"#FCFCFD"}>
+        <Box flex="1" m={"0px"} bgColor={"#FCFCFD"} w={"100%"}>
           <Outlet />
         </Box>
         <Footer />

@@ -64,7 +64,6 @@ export default function Navbar() {
         py={1}
         boxShadow={scrolled ? "md" : "none"}
         mt={20}
-        ml={"10px"}
         borderTop="1px solid"
         borderBottom="1px solid"
         borderColor="#EAECF0"

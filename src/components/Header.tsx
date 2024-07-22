@@ -101,7 +101,7 @@ export default function Header() {
                   <NavLink>{link.label}</NavLink>
                 </RouterLink>
               ))}
-              <RouterLink to={"/live"}>
+              <RouterLink to={"/"}>
                 <Button
                   variant={"outline"}
                   borderColor={"#CFC0F9"}
@@ -124,7 +124,7 @@ export default function Header() {
                 </Button>
               </RouterLink>
 
-              <RouterLink to={"/login"}>
+              <RouterLink to={""}>
                 <Button
                   variant={"solid"}
                   bgColor={"#5F2EEA"}

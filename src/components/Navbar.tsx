@@ -81,7 +81,7 @@ export default function Navbar() {
                   <NavLink>{link.label}</NavLink>
                 </RouterLink>
               ))}
-              <RouterLink to={"/live"}>
+              <RouterLink to={""}>
                 <Button
                   variant={"solid"}
                   bgColor={"#EFEAFD"}
@@ -103,7 +103,7 @@ export default function Navbar() {
                   Bills Payment
                 </Button>
               </RouterLink>
-              <RouterLink to={"/login"}>
+              <RouterLink to={"/"}>
                 <Button
                   variant={"outline"}
                   borderColor={"#CFC0F9"}
@@ -122,7 +122,7 @@ export default function Navbar() {
                 </Button>
               </RouterLink>
 
-              <RouterLink to={"/login"}>
+              <RouterLink to={"/cart"}>
                 <Button
                   variant={"solid"}
                   bgColor={"#5F2EEA"}

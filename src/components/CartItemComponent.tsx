@@ -22,6 +22,7 @@ export const CartItemComponent: React.FC<CartItemProps> = ({ item }) => {
       border="1px solid #F2F4F7"
       borderRadius="md"
       p={4}
+      w={"100%"}
     >
       <Image src={imageUrl} alt={item.type} boxSize="60px" />
       <Box>

@@ -3,11 +3,12 @@ import { Box, Text, VStack, Button, Divider, Center } from '@chakra-ui/react';
 import { useFetchCartItems, CartItem } from '../hooks/useFetchCartItems';
 import { CartItemComponent } from './CartItemComponent';
 import AppLoader from './AppLoader';
+import { useNavigate } from 'react-router-dom';
 
 const Cart: React.FC = () => {
   const { data: cart, isLoading } = useFetchCartItems();
 
-  console.log(cart);
+  const navigate = useNavigate();
 
   if (isLoading) {
     return (
@@ -22,7 +23,9 @@ const Cart: React.FC = () => {
       <Box p={4} bg="white" borderRadius="md" boxShadow="sm" w="100%">
         <Text fontSize="2xl" fontWeight="bold">Your cart</Text>
         <Text mt={4}>Your cart is empty</Text>
-        <Button mt={4} variant="link" colorScheme="purple">Continue Shopping</Button>
+        <Button mt={4} variant="link" colorScheme="purple" onClick={() => navigate('/')} textAlign="center">
+          Continue Shopping
+        </Button>
       </Box>
     );
   }
@@ -40,7 +43,11 @@ const Cart: React.FC = () => {
           </React.Fragment>
         ))}
       </VStack>
-      <Button mt={4} variant="link" colorScheme="purple">Continue Shopping</Button>
+      <Center>
+        <Button mt={4} variant="link" colorScheme="purple" onClick={() => navigate('/')}>
+          Continue Shopping
+        </Button>
+      </Center>
     </Box>
   );
 };
